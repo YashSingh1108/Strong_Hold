@@ -1,0 +1,524 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  header {
+    position: relative;
+    background-image: url("https://assets.website-files.com/621d8b0423efcfa5ba281fb6/621d8b0423efcfa43d282004_image-home-hero-gym-x-template.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: .5s ease;
+    background-size: cover;
+  }
+  
+  /* Overlay for background opacity */
+  header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Black overlay with 0.6 opacity */
+    z-index: 1;
+  }
+  
+  .nav {
+    position: relative;
+    top: 20px;
+    z-index: 2; /* Ensures content appears above the overlay */
+    background-color: black;
+    margin: auto;
+    width: 90vw;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 12px;
+    align-items: center;
+    span{
+      color: white;
+    }
+  }
+  .navimg{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .nav img {
+    filter: invert(1);
+  }
+  
+  .nav ul {
+    margin: 20px;
+    position: relative;
+    left: -30px;
+    display: flex;
+  }
+  
+  .nav li {
+    font-size: 1.5rem;
+    margin-left: 25px;
+    list-style: none;
+  }
+  
+  .nav a {
+    color: white;
+    font-weight: 200;
+    transition: 0.4s ease;
+  }
+  
+  .nav li:hover a {
+    color: red;
+  }
+  
+  .headercontent {
+    margin-top: 150px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2; /* Keeps content above overlay */
+  }
+  
+  .headercontent h1 {
+    width: 70vw;
+    text-align: center;
+    font-size: 5rem;
+  }
+  
+  .headercontent p {
+    margin-top: 20px;
+    width: 60vw;
+    text-align: center;
+  }
+  
+  .headercontent button {
+    border: none;
+    background-color: white;
+    margin: 20px;
+    padding: 25px 40px;
+    border-radius: 4px;
+    font-size: 1.3rem;
+    transition: 0.4s ease;
+  }
+  
+  .headercontent button:hover {
+    background-color: red;
+    transform: scale(1.1);
+}
+
+.contact-time{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    gap: 20px;
+    a{
+      color: white;
+    }
+    h3{
+      font-size: 1.5rem;
+    }
+    img{
+        filter: invert(1);
+    }
+    p,a{
+      margin-top: 10px;
+      font-size: .9rem;
+      opacity: .7;
+    }
+    .contact{
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact-time-content{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+}
+.beforeclass{
+  color: black;
+  h1{
+    width: 70vw;
+    font-size: 3rem;
+  }
+  p{
+    width: 50vw;
+    color:gray;
+    text-align: center;
+  }
+  button{
+    background-color: black;
+    a{
+      color: white;
+    }
+  }
+}
+
+.classes{
+  overflow: hidden;
+  background-color: black;
+  padding: 30px;
+  color: white;
+  margin-top: 15vh;
+  transition: .4s ease;
+  h1{
+    text-align: center;
+    font-size: 4rem;
+  }
+}
+
+
+.infiimg{
+  overflow: hidden;
+}
+
+.infiimg img{
+  width: 30vw;
+  border-radius: 8px;
+}
+
+.infiniteclasses {
+  margin-top: 10vh;
+  display: flex;
+  gap: 30px;
+  position: relative;
+  animation: scrollHorizontal 20s linear infinite;
+}
+
+
+.infiniteclasses::after {
+  content: '';
+  display: flex;
+}
+.inficlasselement{
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  width: 40vw;
+  box-shadow: rgba(255, 255, 255, 0.55) 0px 5px 35px;
+
+  h3{
+    font-size: 2rem;
+  }
+  p{
+    color:gray;
+  }
+  a{
+    color: white;
+    font-size: 1.5rem;
+  }
+  img{
+    transition: .4s ease;
+  }
+  a{
+    transition: .4s ease;
+
+  }
+}
+
+.inficlasselement:hover{
+  img{
+    transform: scale(1.1);
+  }
+  a{
+    color: red;
+  }
+}
+
+.classes .button{
+  margin-top: 7vh;
+  text-align: center;
+}
+
+.button button{
+  transition: .4s ease;
+  border-radius: 8px;
+  padding: 25px 40px;
+  border: none;
+  
+}
+.button button a{
+  font-size: 1.2rem;
+}
+
+.button button:hover{
+    background-color: red;
+    transform: scale(1.1);
+}
+
+
+.trainers{
+  margin: 15vh auto;
+  width: 95vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  h1{
+    text-align: center;
+    font-size: 3rem;
+  }
+}
+
+.xd{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trimg{
+  border-radius: 12px;
+  img{
+    transition: .4s ease;
+  }
+}
+.trimg:hover{
+  img{
+    transform: scale(1.1);
+  }
+}
+
+.trainerselement{
+  width: fit-content;
+  padding: 10px;
+  text-align: center;
+  img{
+    border-radius: 12px;
+    width: 29vw;
+  }
+  h2{
+    font-size: 2rem;
+  }
+  p{
+    font-size: 1.3rem;
+    color: gray;
+  }
+}
+
+.trainers .button{
+  margin: auto;
+}
+
+.trainers button{
+  a{
+    color: white;
+  }
+  background-color: black;
+}
+
+
+footer{
+  padding: 20px;
+  background-color: black;
+  img{
+    filter: invert(1);
+  }
+  p{
+    width: 40vw;
+    font-size: 15px;
+    color: gray;
+  }
+}
+
+footer span,p,footer a{
+  color: white;
+  transition: .4s ease;
+}
+
+.footer-top{
+  display: flex;
+  justify-content: space-between;
+}
+.footer-mid{
+  margin: 6vh auto 0 ;
+  width: 50vw;
+}
+
+.footer-mid ul{
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  li{
+    list-style: none;
+  }
+}
+
+footer a:hover{
+  color: red;
+}
+
+.footer-end{
+  margin-top: 5vh;
+  text-align: center;
+  h3{
+    color: gray;
+  }
+  .socials{
+    margin-top: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+}
+
+.socials a:hover{
+  background-color: white;
+  img{
+    filter: invert(0);
+  }
+}
+
+@keyframes scrollHorizontal {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .headercontent h1{
+    font-size: 3rem;
+  }
+  .headercontent p{
+    font-size: small;
+  }
+  .nav li{
+    font-size: 1rem;
+  }
+  .nav span{
+    font-size: small;
+  }
+  .nav img{
+    width: 30px;
+  }
+  .beforeclass h1{
+    font-size: 2rem;
+  }
+  .headercontent button{
+    padding: 10px 20px;
+  }
+  .headercontent button a{
+    font-size: 1rem;
+  }
+  .contact-time{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .inficlasselement h3{
+    font-size: 1rem;
+  }
+  .inficlasselement p{
+    font-size: .7rem;
+  }
+  .inficlasselement a{
+    font-size: .9rem;
+  }
+  .classes h1{
+    font-size: 2rem;
+  }
+  .classes button{
+    padding: 10px 20px;
+  }
+  .trainers h1{
+    font-size: 2rem;
+  }
+  .trainers h2{
+    font-size: 1rem;
+  }
+  .trainers p{
+    font-size:.8rem ;
+  }
+  .trainers button{
+    padding: 10px 20px;
+  }
+}
+
+@media only screen and (max-width:1000px) {
+  .nav img{
+    width: 20px;
+  }
+  .navimg span{
+    font-size: .5rem;
+  }
+  .nav a{
+    font-size: .7rem;
+  }
+  .footer-top p{
+    font-size: .6rem;
+  }
+  .footer-mid a{
+    font-size: 1rem;
+  }
+  .footer-end img{
+    width: 30px;
+  }
+  .headercontent h1{
+    font-size: 1.5rem;
+  }
+  .headercontent p{
+    font-size: .7rem;
+    
+  }
+  .beforeclass h1{
+    font-size: 1rem;
+  }
+  .beforeclass p{
+    font-size: .6rem;
+  }
+  .beforeclass button a{
+    font-size: .7rem;
+  }
+  .beforeclass button{
+    padding: 5px 10px;
+  }
+  .contact-time-content{
+    h3{
+      font-size: medium;
+    }
+    a,p{
+      font-size: small;
+    }
+  }
+  .cont-time-img img{
+    width: 20px;
+  }
+  footer img{
+    width: 20px;
+  }
+  .footer-mid a{
+    font-size: .7rem;
+  }
+  .footer-end h3{
+    font-size: .8rem;
+  }
+  .socials a img{
+    width: 20px;
+  }
+}
